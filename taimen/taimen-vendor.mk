@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 
-
 PRODUCT_COPY_FILES += \
     vendor/google/taimen/proprietary/bin/applypatch:system/bin/applypatch \
     vendor/google/taimen/proprietary/bin/bufferhubd:system/bin/bufferhubd \
@@ -88,11 +87,12 @@ PRODUCT_COPY_FILES += \
     vendor/google/taimen/proprietary/app/ims/lib/arm64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
     vendor/google/taimen/proprietary/app/ims/lib/arm64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
     vendor/google/taimen/proprietary/lib64/librcc.so:system/lib64/librcc.so \
-    vendor/google/taimen/proprietary/lib64/libmotricity.so:system/lib64/libmotricity.so
+    vendor/google/taimen/proprietary/priv-app/MyVerizonServices/lib/arm64/libmotricity.so:system/lib64/libmotricity.so
 
 
 PRODUCT_PACKAGES += \
     Tycho \
+    MyVerizonServices \
     AmbientSensePrebuilt \
     EaselServicePrebuilt \
     VZWAPNLib \
